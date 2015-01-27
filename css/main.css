@@ -54,9 +54,9 @@ html {
 
 .banana {
 	position: absolute;
-	width: 50px;
+	width: 60px;
 	height:100px;
-	left: 30%;
+	left: 10%;
 	display: block;
 	animation:banana 5s linear infinite;
 
@@ -70,20 +70,39 @@ html {
 
 .banana-two {
 	position: absolute;
-	width: 50px;
+	width: 80px;
 	height:100px;
+	left: 40%;
 	animation:banana-two 6s linear infinite;
 }
 
 @keyframes banana-two{
-	0% {transform: rotate(0deg);left: 60%;top:0%;}
-	50% {transform: rotate(-180deg); left: 60%;top:50%;}
-	100% {transform: rotate(-360deg); left: 60%;top: 100%;}
+	0% {transform: rotate(0deg);top:0%;}
+	50% {transform: rotate(-180deg); top:50%;}
+	100% {transform: rotate(-360deg); top: 100%;}
 }
 
 .banana-three {
+	position: absolute;
+	width: 50px;
+	height:100px;
+	left: 75%;
+	animation:banana-three 4s linear infinite;
+}
+
+@keyframes banana-three{
+	0% {transform: rotate(0deg);top:0%;}
+	50% {transform: rotate(360deg); top:50%;}
+	100% {transform: rotate(720deg); top: 100%;}
+}
+
+.banana-four {
 	display: none;
 
+}
+
+.banana-five {
+	display: none;
 }
 
 @media only screen and (min-width: 25em){
@@ -102,20 +121,34 @@ html {
 		display: inline-block;
 	}
 
-	.banana-three {
+	.banana-four {
 	display: block;
 	position: absolute;
-	width: 50px;
+	width: 70px;
 	height:100px;
 	left: 90%;
-	animation:banana-three 5.5s linear infinite;
+	animation:banana-four 7s linear infinite;
 }
 
-@keyframes banana-three{
+@keyframes banana-four{
 	0% {transform: rotate(0deg);top:0%;}
-	50% {transform: rotate(180deg);top:50%;}
-	100% {transform: rotate(360deg);top: 100%;}
+	50% {transform: rotate(-180deg);top:50%;}
+	100% {transform: rotate(-360deg);top: 100%;}
 }
 
+.banana-five {
+	display: block;
+	position: absolute;
+	width: 60px;
+	height:100px;
+	left: 60%;
+	animation:banana-five 5s linear infinite;
+}
+
+@keyframes banana-five{
+	0% {transform: rotate(0deg);top:0%;}
+	50% {transform: rotate(-720deg);top:50%;}
+	100% {transform: rotate(-1440deg);top: 100%;}
+}
 	
 }
