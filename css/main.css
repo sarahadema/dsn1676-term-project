@@ -43,24 +43,47 @@ html {
 }
 
 .billboard {
+	position: relative;
 	padding: 0;
 	margin: 0;
 	overflow: hidden;
 	background-color:#DDA0DD;
 	width: 100%;
-	height: 100vh;
+	height: 70vh;
 }
 
 .banana {
+	position: absolute;
 	width: 50px;
 	height:100px;
+	left: 30%;
+	display: block;
 	animation:banana 5s linear infinite;
+
 }
 
 @keyframes banana{
-	0% {transform: rotate(0deg);left: 25%;top:0px;}
-	50% {transform: rotate(180deg); left: 25%;top:100px;}
-	100% {transform: rotate(360deg); left: 25%;top: 2000px;}
+	0% {transform: rotate(0deg);top:0%;}
+	50% {transform: rotate(180deg); top:50%;}
+	100% {transform: rotate(360deg); top: 100%;}
+}
+
+.banana-two {
+	position: absolute;
+	width: 50px;
+	height:100px;
+	animation:banana-two 6s linear infinite;
+}
+
+@keyframes banana-two{
+	0% {transform: rotate(0deg);left: 60%;top:0%;}
+	50% {transform: rotate(-180deg); left: 60%;top:50%;}
+	100% {transform: rotate(-360deg); left: 60%;top: 100%;}
+}
+
+.banana-three {
+	display: none;
+
 }
 
 @media only screen and (min-width: 25em){
@@ -78,6 +101,21 @@ html {
 	.nav li {
 		display: inline-block;
 	}
+
+	.banana-three {
+	display: block;
+	position: absolute;
+	width: 50px;
+	height:100px;
+	left: 90%;
+	animation:banana-three 5.5s linear infinite;
+}
+
+@keyframes banana-three{
+	0% {transform: rotate(0deg);top:0%;}
+	50% {transform: rotate(180deg);top:50%;}
+	100% {transform: rotate(360deg);top: 100%;}
+}
 
 	
 }
