@@ -38,8 +38,15 @@ html {
 	position: absolute;
 	top: 60%;
 	left: 40%;
+	color: #fff;	
+}
+
+.tagline {
+	position: absolute;
+	top: 75%;
+	left: 25%;
 	color: #fff;
-	
+	line-height: .75em;
 }
 
 .billboard {
