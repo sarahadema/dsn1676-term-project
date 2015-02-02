@@ -71,10 +71,20 @@ html {
 	height:100px;
 	left: 10%;
 	display: block;
+	opacity: 1;
+	-webkit-animation:banana 5s linear infinite;
 	animation:banana 5s linear infinite;
-
 }
 
+.banana:target {
+	opacity: 0.5;	
+}
+
+@-webkit-keyframes banana{
+	0% {-webkit-transform: rotate(0deg);top:0%;}
+	50% {-webkit-transform: rotate(180deg); top:50%;}
+	100% {-webkit-transform: rotate(360deg); top: 100%;}
+}
 @keyframes banana{
 	0% {transform: rotate(0deg);top:0%;}
 	50% {transform: rotate(180deg); top:50%;}
@@ -86,7 +96,14 @@ html {
 	width: 80px;
 	height:100px;
 	left: 40%;
+	-webkit-animation:banana-two 6s linear infinite;
 	animation:banana-two 6s linear infinite;
+}
+
+@-webkit-keyframes banana-two{
+	0% {-webkit-transform: rotate(0deg);top:0%;}
+	50% {-webkit-transform: rotate(-180deg); top:50%;}
+	100% {-webkit-transform: rotate(-360deg); top: 100%;}
 }
 
 @keyframes banana-two{
@@ -100,7 +117,14 @@ html {
 	width: 50px;
 	height:100px;
 	left: 75%;
+	-webkit-animation:banana-three 4s linear infinite;
 	animation:banana-three 4s linear infinite;
+}
+
+@-webkit-keyframes banana-three{
+	0% {-webkit-transform: rotate(0deg);top:0%;}
+	50% {-webkit-transform: rotate(360deg); top:50%;}
+	100% {-webkit-transform: rotate(720deg); top: 100%;}
 }
 
 @keyframes banana-three{
@@ -120,12 +144,10 @@ html {
 
 @media only screen and (min-width: 25em){
 
-
 }
 
 @media only screen and (min-width: 38em){
 
-	
 }
 
 @media only screen and (min-width: 60em){
@@ -134,13 +156,20 @@ html {
 		display: inline-block;
 	}
 
-	.banana-four {
+.banana-four {
 	display: block;
 	position: absolute;
 	width: 70px;
 	height:100px;
 	left: 90%;
+	-webkit-animation:banana-four 7s linear infinite;
 	animation:banana-four 7s linear infinite;
+	}
+
+@-webkit-keyframes banana-four{
+	0% {-webkit-transform: rotate(0deg);top:0%;}
+	50% {-webkit-transform: rotate(-180deg);top:50%;}
+	100% {-webkit-transform: rotate(-360deg);top: 100%;}
 }
 
 @keyframes banana-four{
@@ -155,7 +184,14 @@ html {
 	width: 60px;
 	height:100px;
 	left: 60%;
+	-webkit-animation:banana-five 5s linear infinite;
 	animation:banana-five 5s linear infinite;
+}
+
+@-webkit-keyframes banana-five{
+	0% {-webkit-transform: rotate(0deg);top:0%;}
+	50% {-webkit-transform: rotate(-720deg);top:50%;}
+	100% {-webkit-transform: rotate(-1440deg);top: 100%;}
 }
 
 @keyframes banana-five{
