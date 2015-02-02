@@ -30,30 +30,30 @@ html {
 .nav li {
 	display: block;
 	color: #111;
-
 }
 
 .name {
 	text-transform: uppercase;
+	line-height: 1em;
 	position: absolute;
 	top: 60%;
-	left: 40%;
-	right: 30%;
+	left: 50%;
+	transform:translateX(-50%);
 	color: #fff;	
 }
 
 .tagline {
 	position: absolute;
 	bottom:10%;
-	left: 20%;
-	right: 20%;
+	left: 50%;
+	transform: translateX(-50%);
 	color: #fff;
-	line-height: .75em;
+	line-height: 1.5em;
 	opacity: 0.5;
 	transition: all 1000ms ease-in;
 }
 
-.tagline:target {
+#tagline:target .tagline {
 	opacity: 0.75;
 }
 
@@ -74,6 +74,7 @@ html {
 	left: 10%;
 	display: block;
 	opacity: 1;
+	transition:all 2000ms ease-in;
 	-webkit-animation:banana 5s linear infinite;
 	animation:banana 5s linear infinite;
 }
