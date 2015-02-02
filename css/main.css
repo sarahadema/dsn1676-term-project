@@ -38,13 +38,15 @@ html {
 	position: absolute;
 	top: 60%;
 	left: 40%;
+	right: 30%;
 	color: #fff;	
 }
 
 .tagline {
 	position: absolute;
-	top: 75%;
-	left: 30%;
+	bottom:10%;
+	left: 20%;
+	right: 20%;
 	color: #fff;
 	line-height: .75em;
 	opacity: 0.5;
