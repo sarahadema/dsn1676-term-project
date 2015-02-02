@@ -47,12 +47,12 @@ html {
 	left: 30%;
 	color: #fff;
 	line-height: .75em;
-	transition: all 1000ms linear;
+	opacity: 0.5;
+	transition: all 1000ms ease-in;
 }
 
 .tagline:target {
-	opacity: 1;
-	transform: roa;
+	opacity: 0.75;
 }
 
 .billboard {
