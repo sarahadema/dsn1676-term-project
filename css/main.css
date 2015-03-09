@@ -161,7 +161,7 @@ html {
 }
 
 .notebook {
-	opacity:0;
+	width: 100%;
 }
 
 
@@ -179,7 +179,7 @@ html {
 }
 
 .stickers {
-	opacity:0;
+	width:100%;
 }
 
 .js-btn-stickers {
@@ -197,11 +197,15 @@ html {
 }
 
 .tshirt {
-	opacity:0;
+	width:100%;
 }
 
 .js-btn-tshirt {
 	opacity: 1;
+}
+
+.btn-add {
+	border-radius: 50%;
 }
 
 @media only screen and (min-width: 25em){
