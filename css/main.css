@@ -145,6 +145,64 @@ html {
 	display: none;
 }
 
+.btn-notebook {
+	
+	height:10%;
+	width: 30%;
+	padding:5px;
+	background-color: #DDA0DD;
+	text-transform: uppercase;
+
+
+	transition:all 250ms ease-in;
+}
+
+.notebook {
+	opacity:0;
+}
+
+
+.js-btn-notebook {
+	opacity: 1;
+}
+
+.btn-stickers {
+	height:10%;
+	width: 30%;
+	padding:5px;
+	background-color: #DDA0DD;
+	text-transform: uppercase;
+
+	transition: all 250ms ease-in;
+}
+
+.stickers {
+	opacity:0;
+}
+
+.js-btn-stickers {
+	opacity: 1;
+}
+
+.btn-tshirt {
+	height: 10%;
+	width: 30%;
+	padding:5px;
+	background-color: #DDA0DD;
+	text-transform: uppercase;
+
+	transition:all 250ms ease-in;
+
+}
+
+.tshirt {
+	opacity:0;
+}
+
+.js-btn-tshirt {
+	opacity: 1;
+}
+
 @media only screen and (min-width: 25em){
 
 }
