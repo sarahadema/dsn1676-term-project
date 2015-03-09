@@ -145,10 +145,13 @@ html {
 	display: none;
 }
 
+.section-title {
+	color: #800080;
+	text-align:center;
+}
+
 .btn-notebook {
-	
-	height:10%;
-	width: 30%;
+	width: 40%;
 	padding:5px;
 	background-color: #DDA0DD;
 	text-transform: uppercase;
@@ -167,8 +170,7 @@ html {
 }
 
 .btn-stickers {
-	height:10%;
-	width: 30%;
+	width: 40%;
 	padding:5px;
 	background-color: #DDA0DD;
 	text-transform: uppercase;
@@ -185,8 +187,7 @@ html {
 }
 
 .btn-tshirt {
-	height: 10%;
-	width: 30%;
+	width:40%;
 	padding:5px;
 	background-color: #DDA0DD;
 	text-transform: uppercase;
