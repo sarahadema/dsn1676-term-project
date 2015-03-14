@@ -151,10 +151,12 @@ html {
 }
 
 .btn-notebook {
-	width: 40%;
 	padding:5px;
 	background-color: #DDA0DD;
+	color: #fff;
 	text-transform: uppercase;
+	border:none;
+	float:right;
 
 
 	transition:all 250ms ease-in;
@@ -164,17 +166,22 @@ html {
 	width: 100%;
 }
 
+.info-notebook {
+	opacity:0;
+}
+
 
 .js-btn-notebook {
 	opacity: 1;
 }
 
 .btn-stickers {
-	width:100%;
-	border-radius:50%;
 	padding:5px;
 	background-color: #DDA0DD;
+	color: #fff;
 	text-transform: uppercase;
+	border:none;
+	float:right;
 
 	transition: all 250ms ease-in;
 }
@@ -195,7 +202,9 @@ html {
 	border:none;
 	padding:5px;
 	background-color: #DDA0DD;
+	color: #fff;
 	text-transform: uppercase;
+	float: right;
 
 	transition:all 250ms ease-in;
 
