@@ -157,9 +157,6 @@ html {
 	text-transform: uppercase;
 	border:none;
 	float:right;
-
-
-	transition:all 250ms ease-in;
 }
 
 .notebook {
@@ -167,12 +164,15 @@ html {
 }
 
 .info-notebook {
-	opacity:0;
+	max-height:0;
+	overflow: hidden;
+
+	transition:all 250ms ease-in;
 }
 
 
 .js-btn-notebook {
-	opacity: 1;
+	max-height:10em;
 }
 
 .img-stickers {
@@ -185,19 +185,18 @@ html {
 	color: #fff;
 	text-transform: uppercase;
 	border:none;
-	float:right;
-
-
-	transition: all 250ms ease-in;
+	float:right;	
 }
 
 .info-stickers {
-	opacity: 0;
-	overflow: hidden;	
+	max-height:0;
+	overflow: hidden;
+
+	transition: all 250ms ease-in;	
 }
 
 .js-btn-stickers {
-	opacity: 1;
+	max-height:10em;
 }
 
 .btn-tshirt {
@@ -208,22 +207,23 @@ html {
 	text-transform: uppercase;
 	float: right;
 
-	transition:all 250ms ease-in;
-
 }
 
 .info-tshirt {
-	opacity:0;
+	max-height:0;
+	overflow:hidden;
+
+	transition:all 250ms ease-in;
 }
+
+.js-btn-tshirt {
+	max-height:10em;
+}
+
 
 .tshirt {
 	width:100%;
 }
-
-.js-btn-tshirt {
-	opacity: 1;
-}
-
 
 @media only screen and (min-width: 25em){
 
@@ -281,6 +281,4 @@ html {
 	0% {transform: rotate(0deg);top:0%;}
 	50% {transform: rotate(-720deg);top:50%;}
 	100% {transform: rotate(-1440deg);top: 100%;}
-}
-	
 }
