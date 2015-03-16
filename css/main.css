@@ -38,7 +38,7 @@ html {
 
 .btn-nav {
 	
-	display:block;
+	display:inline-block;
 	float: right;
 	border:none;
 	outline: 1px solid #fff;
@@ -66,9 +66,9 @@ html {
 	bottom:10%;
 	left: 50%;
 	transform: translateX(-50%);
-	color: #fff;
+	color: #800080;
 	line-height: 1.5em;
-	opacity: 0.5;
+	text-align: center;
 	transition: all 1000ms ease-in;
 }
 
@@ -173,11 +173,19 @@ html {
 	display:none;
 }
 
+.tabs {
+	
+}
+
 .tabs li {
-	display:inline-block;
+	display:block;
 	text-decoration: none;
 	padding:5px;
-	text-align: center;
+	width:100%;
+}
+
+.tab-panel {
+	display: block;
 }
 
 a:focus {
@@ -198,15 +206,15 @@ a {
 
 
 .notebook {
-	width: 100%;
+	width: 80%;
 }
 
 .img-stickers {
-	width:100%;
+	width:80%;
 }
 
 .tshirt {
-	width:100%;
+	width:80%;
 }
 
 @media only screen and (min-width: 25em){
