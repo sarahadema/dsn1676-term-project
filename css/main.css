@@ -175,6 +175,10 @@ html {
 	opacity: 1;
 }
 
+.img-stickers {
+	width:100%;
+}
+
 .btn-stickers {
 	padding:5px;
 	background-color: #DDA0DD;
@@ -183,15 +187,13 @@ html {
 	border:none;
 	float:right;
 
-	transition: all 250ms ease-in;
-}
 
-.stickers {
-	width:100%;
+	transition: all 250ms ease-in;
 }
 
 .info-stickers {
 	opacity: 0;
+	overflow: hidden;	
 }
 
 .js-btn-stickers {
