@@ -32,10 +32,11 @@ html {
 .nav li {
 	display:block;
 	color: #111;
+	border-bottom: 1px solid #DDA0DD;
 }
 
 .btn-nav {
-	display:inline-block;
+	display:block;
 	float: right;
 	border:none;
 	outline: 1px solid #fff;
