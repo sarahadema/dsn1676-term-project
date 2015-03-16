@@ -12,8 +12,8 @@ $tabs.on('click', 'a', function (e) {
 	e.preventDefault ();
 	var id = $(this).attr('href');
 	
-	$panel.filter(':not([hidden])').attr('hidden', true);
-	$(id).removeAttr('hidden');
+	$panel.filter('.js-panel-visible').removeClass('js-panel-visible');
+	$(id).addClass('js-panel-visible');
 
 	$tabs.find('.js-current').removeClass('js-current');
 	$(this).addClass('js-current');
