@@ -25,7 +25,7 @@ html {
 
 .nav {
 	padding:0;
-	max-height:0;
+	display:none;
 	overflow: hidden;
 
 	transition: all 250ms ease-in;
@@ -40,10 +40,11 @@ html {
 	float: right;
 	border:none;
 	padding:2em;
+	background-color: #fff;
 }
 
 .js-btn-nav {
-	max-height:10em;
+	display:block;
 
 }
 
@@ -165,6 +166,10 @@ html {
 	text-align:center;
 }
 
+[hidden] {
+	display:none;
+}
+
 .btn-notebook {
 	padding:5px;
 	background-color: #DDA0DD;
@@ -176,13 +181,6 @@ html {
 
 .notebook {
 	width: 100%;
-}
-
-.info-notebook {
-	max-height:0;
-	overflow: hidden;
-
-	transition:all 250ms ease-in;
 }
 
 
@@ -203,12 +201,6 @@ html {
 	float:right;	
 }
 
-.info-stickers {
-	max-height:0;
-	overflow: hidden;
-
-	transition: all 250ms ease-in;	
-}
 
 .js-btn-stickers {
 	max-height:10em;
@@ -224,12 +216,6 @@ html {
 
 }
 
-.info-tshirt {
-	max-height:0;
-	overflow:hidden;
-
-	transition:all 250ms ease-in;
-}
 
 .js-btn-tshirt {
 	max-height:10em;
