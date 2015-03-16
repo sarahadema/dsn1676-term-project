@@ -28,7 +28,7 @@ html {
 	display:none;
 	overflow: hidden;
 
-	transition: all 250ms ease-in;
+	transition: all 1000ms ease-in;
 }
 
 .nav li {
@@ -37,9 +37,12 @@ html {
 }
 
 .btn-nav {
+	
+	display:block;
 	float: right;
 	border:none;
-	padding:2em;
+	outline: 1px solid #fff;
+	
 	background-color: #fff;
 }
 
@@ -170,57 +173,37 @@ html {
 	display:none;
 }
 
-.btn-notebook {
+.tabs li {
+	display:inline-block;
+	text-decoration: none;
 	padding:5px;
-	background-color: #DDA0DD;
-	color: #fff;
-	text-transform: uppercase;
-	border:none;
-	float:right;
+	text-align: center;
 }
+
+a:focus {
+	outline: 2px solid #DDA0DD;
+}
+
+a {
+	text-decoration: none;
+	color:#800080;
+}
+
+.js-current {
+	background-color:#DDA0DD; 
+	color:#fff;
+	padding:5px;
+	display: block;
+}
+
 
 .notebook {
 	width: 100%;
 }
 
-
-.js-btn-notebook {
-	max-height:10em;
-}
-
 .img-stickers {
 	width:100%;
 }
-
-.btn-stickers {
-	padding:5px;
-	background-color: #DDA0DD;
-	color: #fff;
-	text-transform: uppercase;
-	border:none;
-	float:right;	
-}
-
-
-.js-btn-stickers {
-	max-height:10em;
-}
-
-.btn-tshirt {
-	border:none;
-	padding:5px;
-	background-color: #DDA0DD;
-	color: #fff;
-	text-transform: uppercase;
-	float: right;
-
-}
-
-
-.js-btn-tshirt {
-	max-height:10em;
-}
-
 
 .tshirt {
 	width:100%;
@@ -235,10 +218,6 @@ html {
 }
 
 @media only screen and (min-width: 60em){
-
-	.nav li {
-		display: inline-block;
-	}
 
 .banana-four {
 	display: block;
