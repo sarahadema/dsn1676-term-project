@@ -25,6 +25,10 @@ html {
 
 .nav {
 	padding:0;
+	max-height:0;
+	overflow: hidden;
+
+	transition: all 250ms ease-in;
 }
 
 .nav li {
@@ -32,10 +36,15 @@ html {
 	color: #111;
 }
 
-.toggle-nav {
+.btn-nav {
 	float: right;
 	border:none;
 	padding:2em;
+}
+
+.js-btn-nav {
+	max-height:10em;
+
 }
 
 .name {
