@@ -28,8 +28,14 @@ html {
 }
 
 .nav li {
-	display: block;
+	display:block;
 	color: #111;
+}
+
+.toggle-nav {
+	float: right;
+	border:none;
+	padding:2em;
 }
 
 .name {
