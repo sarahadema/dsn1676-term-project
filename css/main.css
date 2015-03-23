@@ -80,7 +80,7 @@ body{
 	opacity: 0.75;
 }
 
-.shop {
+.story-btn {
 	background-color: #DDA0DD;
 	color: #fff;
 	border: none;
@@ -201,7 +201,7 @@ body{
 .tab-panel {
 	display: block;
 	position:relative;
-	padding-top: 120%;
+	padding-top: 140%;
 }
 
 a:focus {
@@ -247,7 +247,7 @@ a {
 }
 
 .back-to-top{
-	width:10%;
+	width:20%;
 	position:absolute;
 	margin: 1px;
 
@@ -264,14 +264,23 @@ a {
 }	
 
 @media only screen and (min-width: 25em){
-
+	.tab-panel{
+		padding-top:120%;
+	}
 }
 
 @media only screen and (min-width: 38em){
+	.tab-panel{
+		padding-top:80%;
+	}
 
 }
 
 @media only screen and (min-width: 60em){
+
+.tab-panel{
+		padding-top:70%;
+	}	
 
 .banana-four {
 	display: block;
