@@ -21,4 +21,4 @@ $tabs.on('click', 'a', function (e) {
 
 $('.nav').localScroll();
 $('.return').localScroll();
-$('.shop-button').localScroll();
+$('.story').localScroll();
