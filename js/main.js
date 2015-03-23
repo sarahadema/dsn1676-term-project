@@ -20,4 +20,4 @@ $tabs.on('click', 'a', function (e) {
 });
 
 $('.nav').localScroll();
-$('.back-to-top').localScroll();
+$('.return').localScroll();
