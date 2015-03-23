@@ -234,6 +234,20 @@ a {
 	width:80%;
 }
 
+.back-to-top{
+	float: right;
+	clear: right;
+	width:10%;
+	position:absolute;
+	margin: 1px;
+
+	text-decoration: none;
+	border: none;
+	background-color:#DDA0DD;
+	color: #fff;
+
+}
+
 @media only screen and (min-width: 25em){
 
 }
