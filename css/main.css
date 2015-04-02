@@ -47,6 +47,11 @@ body{
 	background-color: #fff;
 }
 
+.toggle {
+	width:30px;
+	height:30px;
+}
+
 .js-btn-nav {
 	display:block;
 }
