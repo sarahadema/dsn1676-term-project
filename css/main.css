@@ -283,11 +283,11 @@ a {
 
 @keyframes wave {
 	0%{
-		transform:rotate(10deg);
+		transform:rotate(1deg);
 	}
 
 	100% {
-		transform:rotate(-10deg);
+		transform:rotate(-1deg);
 	}
 }
 
