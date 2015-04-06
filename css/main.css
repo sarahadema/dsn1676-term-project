@@ -265,21 +265,36 @@ a {
 
 .return {
 	float: right;
-	display:block;
+	clear:right;
+	display:inline-block;
 }	
+
 .profile {
-	width:50%;
-	height:50%;
+	width:30%;
+	height:30%;
+	display:inline-block;
+
 }
+
+.arm {
+	animation: wave 2s ease-in-out alternate infinite;
+	transform-origin: bottom left;
+	}
 
 @keyframes wave {
 	0%{
-		transform: translateX(0);
+		transform:rotate(10deg);
 	}
 
 	100% {
-		transform:translateX(20px);
+		transform:rotate(-10deg);
 	}
+}
+
+
+.description {
+	text-align: center;
+	display: inline-block;
 }
 
 @media only screen and (min-width: 25em){
