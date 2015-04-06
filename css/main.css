@@ -277,29 +277,29 @@ a {
 }
 
 .arm {
-	animation: wave 2s ease-in-out alternate infinite;
+	animation: wave 200ms ease-in-out alternate infinite;
 	transform-origin: bottom left;
-	-webkit-animation: wave 2s ease-in-out alternate infinite;
+	-webkit-animation: wave 200ms ease-in-out alternate infinite;
 	-webkit-transform-origin: bottom left;
 	}
 
 @keyframes wave {
 	0%{
-		transform:rotate(1deg);
+		transform:rotate(50deg);
 	}
 
 	100% {
-		transform:rotate(-1deg);
+		transform:rotate(-50deg);
 	}
 }
 
 @-webkit-keyframes wave {
 	0%{
-		-webkit-transform:rotate(1deg);
+		-webkit-transform:rotate(50deg);
 	}
 
 	100% {
-		-webkit-transform:rotate(-1deg);
+		-webkit-transform:rotate(-50deg);
 	}
 }
 
