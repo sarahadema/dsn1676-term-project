@@ -279,6 +279,8 @@ a {
 .arm {
 	animation: wave 2s ease-in-out alternate infinite;
 	transform-origin: bottom left;
+	-webkit-animation: wave 2s ease-in-out alternate infinite;
+	-webkit-transform-origin: bottom left;
 	}
 
 @keyframes wave {
@@ -288,6 +290,16 @@ a {
 
 	100% {
 		transform:rotate(-1deg);
+	}
+}
+
+@-webkit-keyframes wave {
+	0%{
+		-webkit-transform:rotate(1deg);
+	}
+
+	100% {
+		-webkit-transform:rotate(-1deg);
 	}
 }
 
