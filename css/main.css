@@ -267,6 +267,20 @@ a {
 	float: right;
 	display:block;
 }	
+.profile {
+	width:50%;
+	height:50%;
+}
+
+@keyframes wave {
+	0%{
+		transform: translateX(0);
+	}
+
+	100% {
+		transform:translateX(20px);
+	}
+}
 
 @media only screen and (min-width: 25em){
 	.tab-panel{
