@@ -85,6 +85,10 @@ body{
 	opacity: 0.75;
 }
 
+.story {
+	display:inline-block;
+}
+
 .story-btn {
 	background-color: #DDA0DD;
 	color: #fff;
