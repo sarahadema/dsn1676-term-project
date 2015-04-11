@@ -258,15 +258,30 @@ a {
 	width:80%;
 }
 
-.back-to-top{
-	width:20%;
+.footer {
+	position: relative;
+}
+
+.back-to-top {
+	padding:none;
+	width:10%;
 	position:absolute;
+	top:30px;
+	right:20px;
 	margin: 1px;
+	display: inline-block;
 
 	text-decoration: none;
 	border: none;
 	background-color:#DDA0DD;
 	color: #fff;
+
+}
+
+.copyright {
+	position: absolute;
+	left:10px;
+	display: inline-block;
 
 }
 
@@ -276,11 +291,14 @@ a {
 	display:inline-block;
 }	
 
-.profile {
-	width:30%;
-	height:30%;
-	display:inline-block;
+.why {
+	background-color:#DDA0DD;
+}
 
+.profile {
+	width:40%;
+	height:40%;
+	display: inline-block;
 }
 
 .arm {
