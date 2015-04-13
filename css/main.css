@@ -24,7 +24,7 @@ body{
 }
 
 .masthead {
-	overflow: hidden;
+	
 	position:relative;
 	height:3em;
 }
@@ -37,20 +37,20 @@ body{
 }
 
 .nav {
+	margin: 0;
 	position:absolute;
-	padding:0;
+	padding:10px;
 	display:none;
 	overflow: hidden;
-	top:30px;
+	top:55px;
 	right:1px;
-	height:50px;
-	
+	z-index: 1000;
+	background-color: #fff;
 }
 
 .nav li {
 	display:block;
 	color: #111;
-	border-bottom: 1px solid #DDA0DD;
 }
 
 .btn-nav {
@@ -277,7 +277,7 @@ a {
 }
 
 .back-to-top {
-	padding:none;
+	padding:5px;
 	width:10%;
 	position:absolute;
 	top:30px;
@@ -286,7 +286,9 @@ a {
 	display: inline-block;
 
 	text-decoration: none;
+	text-align: center;
 	border: none;
+	text-transform: uppercase;
 	background-color:#DDA0DD;
 	color: #fff;
 
