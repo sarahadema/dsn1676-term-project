@@ -43,7 +43,7 @@ body{
 	display:none;
 	overflow: hidden;
 	top:55px;
-	right:1px;
+	right:45px;
 	z-index: 1000;
 	background-color: #fff;
 }
