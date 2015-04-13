@@ -22,3 +22,9 @@ $tabs.on('click', 'a', function (e) {
 $('.nav').localScroll();
 $('.return').localScroll();
 $('.story').localScroll();
+
+var $profile = $('.profile');
+
+$profile.waypoint (function (){
+	$profile.addClass('js-wave');
+}, {offset:'7000%'});

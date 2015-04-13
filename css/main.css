@@ -301,11 +301,7 @@ a {
 	display: inline-block;
 }
 
-.arm {
-	animation: wave 1s ease-in-out alternate infinite;
-	transform-origin: bottom left;
-	-webkit-animation: wave 1s ease-in-out alternate infinite;
-	-webkit-transform-origin: bottom left;
+.arm{
 	}
 
 @keyframes wave {
@@ -328,6 +324,13 @@ a {
 	}
 }
 
+.js-wave .arm{
+	animation: wave 1s ease-in-out alternate infinite;
+	transform-origin: bottom left;
+	-webkit-animation: wave 1s ease-in-out alternate infinite;
+	-webkit-transform-origin: bottom left;
+
+}
 
 .description {
 	text-align: center;
