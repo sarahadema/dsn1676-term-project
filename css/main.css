@@ -100,17 +100,14 @@ body{
 }
 
 #tagline:target .tagline {
-	opacity: 0.75;
+	opacity: 1;
 }
 
 .story-btn {
 	position: absolute;
-	background-color:#DDA0DD;	
-	border: none;
-	margin:1em;
-	line-height: 1.5em;
 	display: block;
-	left: 45%;
+	left: 43%;
+	color: #fff;
 }
 
 .billboard {
@@ -274,6 +271,7 @@ a {
 
 .footer {
 	position: relative;
+	border-top: 1px solid #DDA0DD;
 }
 
 .back-to-top {
@@ -351,6 +349,40 @@ a {
 
 .description {
 	display: inline-block;
+}
+
+.contact {
+	position: relative;
+}
+
+.form {
+	display:inline-block;
+	text-transform: uppercase;
+	color: #DDA0DD;
+}
+
+.input {
+	width: 25em;
+}
+
+.input2 {
+	width:30em;
+	height: 30em;
+}
+
+.form2 {
+	display:block;
+	text-transform:uppercase;
+	color: #DDA0DD;
+}
+
+.map {
+	position:relative;
+	overflow: hidden;
+	width: 1250px;
+	height: 300px;
+	border: none;
+	left:100px;
 }
 
 @media only screen and (min-width: 25em){
