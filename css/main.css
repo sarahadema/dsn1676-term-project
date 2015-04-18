@@ -326,6 +326,7 @@ a {
 
 .description {
 	display:block;
+	text-align: center;
 }
 
 .contact {
@@ -359,7 +360,8 @@ a {
 	position:relative;
 	overflow: hidden;
 	border: none;
-	width: 100vh;
+	width: 100vw;
+	height:12em;
 }
 
 .submit {
