@@ -333,6 +333,10 @@ a {
 	position: relative;
 }
 
+.contact-info {
+	text-align: center;
+}
+
 .form {
 	display:block;
 	text-transform: uppercase;
@@ -356,6 +360,11 @@ a {
 	color: #DDA0DD;
 }
 
+.links {
+	text-decoration: none;
+	color: #fff;
+}
+
 .map {
 	position:relative;
 	overflow: hidden;
@@ -372,6 +381,39 @@ a {
 	padding:7px;
 }
 
+.submit2 {
+	background-color: #800080;
+	border:none;
+	text-transform: uppercase;
+	padding:7px;
+	float:right;
+	clear:right;
+	right:10em;
+	bottom:20%;
+	position:absolute;
+}
+
+.thankyou {
+	text-align: center;
+	color: #800080;
+	text-transform: uppercase;
+	font-size: 5rem;
+	line-height: 1;
+
+
+}
+
+.page-background {
+	background-color: #DDA0DD;
+	margin: 0;
+	height:75vh;
+}
+
+.message {
+	position:relative;
+	color:#800080;
+	padding:5em;
+}
 
 @media only screen and (min-width: 25em){
 	.product {
