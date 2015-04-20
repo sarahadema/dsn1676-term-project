@@ -15,7 +15,7 @@ html {
 	text-size-adjust:100%;
 }
 
-*.*::before, *::after; {
+*,*::before, *::after {
 	box-sizing: inherit;
 }
 
@@ -332,11 +332,9 @@ a {
 }
 
 .profile {
-	overflow: hidden;
-	width:80%;
-	height:80%;
-	left:100px;
-	display: inline-block;
+	overflow: visible;
+	height:70%;
+	display: block;
 }
 
 .arm{
@@ -430,14 +428,29 @@ a {
 	margin:0;
 }
 
+#right-arm {
+	-webkit-animation: arm-rotate 0.5s linear infinite alternate;
+	animation: arm-rotate 0.5s linear infinite alternate;
+	transform-origin: 114px 159px;
+}
+
+#right-arm-wrap {
+	-moz-transform: translate(0px, 1px);
+}
+
+@-webkit-keyframes arm-rotate {
+	0% { transform: rotate(0); }
+	100% { transform: rotate(20deg); }
+}
+
+@keyframes arm-rotate {
+	0% { transform: rotate(0); }
+	100% { transform: rotate(20deg); }
+}
+
 @media only screen and (min-width: 25em){
 	.product {
 		padding-bottom:115%;
-	}
-
-	.profile {
-		width:60%;
-		height:60%;
 	}
 
 	.story-btn {
@@ -455,12 +468,6 @@ a {
 		padding-bottom:100%;
 	}
 
-	.profile{
-		width:30%;
-		height: 100%;
-		
-	}
-
 	.story-btn {
 		left:43%;
 	}
@@ -474,55 +481,52 @@ a {
 
 @media only screen and (min-width: 60em){
 
-.product {
-		padding-bottom:60%;
-	}	
+	.product {
+			padding-bottom:60%;
+		}	
 
-.banana-four {
-	display: block;
-	position: absolute;
-	width: 70px;
-	height:100px;
-	left: 90%;
-	-webkit-animation:banana-four 7s linear infinite;
-	animation:banana-four 7s linear infinite;
+	.banana-four {
+		display: block;
+		position: absolute;
+		width: 70px;
+		height:100px;
+		left: 90%;
+		-webkit-animation:banana-four 7s linear infinite;
+		animation:banana-four 7s linear infinite;
+		}
+
+	@-webkit-keyframes banana-four{
+		0% {-webkit-transform: rotate(0deg);top:0%;}
+		50% {-webkit-transform: rotate(-180deg);top:50%;}
+		100% {-webkit-transform: rotate(-360deg);top: 100%;}
 	}
 
-@-webkit-keyframes banana-four{
-	0% {-webkit-transform: rotate(0deg);top:0%;}
-	50% {-webkit-transform: rotate(-180deg);top:50%;}
-	100% {-webkit-transform: rotate(-360deg);top: 100%;}
-}
+	@keyframes banana-four{
+		0% {transform: rotate(0deg);top:0%;}
+		50% {transform: rotate(-180deg);top:50%;}
+		100% {transform: rotate(-360deg);top: 100%;}
+	}
 
-@keyframes banana-four{
-	0% {transform: rotate(0deg);top:0%;}
-	50% {transform: rotate(-180deg);top:50%;}
-	100% {transform: rotate(-360deg);top: 100%;}
-}
+	.banana-five {
+		display: block;
+		position: absolute;
+		width: 60px;
+		height:100px;
+		left: 60%;
+		-webkit-animation:banana-five 5s linear infinite;
+		animation:banana-five 5s linear infinite;
+	}
 
-.banana-five {
-	display: block;
-	position: absolute;
-	width: 60px;
-	height:100px;
-	left: 60%;
-	-webkit-animation:banana-five 5s linear infinite;
-	animation:banana-five 5s linear infinite;
-}
+	@-webkit-keyframes banana-five{
+		0% {-webkit-transform: rotate(0deg);top:0%;}
+		50% {-webkit-transform: rotate(-720deg);top:50%;}
+		100% {-webkit-transform: rotate(-1440deg);top: 100%;}
+	}
 
-@-webkit-keyframes banana-five{
-	0% {-webkit-transform: rotate(0deg);top:0%;}
-	50% {-webkit-transform: rotate(-720deg);top:50%;}
-	100% {-webkit-transform: rotate(-1440deg);top: 100%;}
-}
+	@keyframes banana-five{
+		0% {transform: rotate(0deg);top:0%;}
+		50% {transform: rotate(-720deg);top:50%;}
+		100% {transform: rotate(-1440deg);top: 100%;}
+	}
 
-@keyframes banana-five{
-	0% {transform: rotate(0deg);top:0%;}
-	50% {transform: rotate(-720deg);top:50%;}
-	100% {transform: rotate(-1440deg);top: 100%;}
-}
-
-.profile {
-	height:40%;
-	width:40%;
 }
