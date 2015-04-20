@@ -21,7 +21,8 @@ $tabs.on('click', 'a', function (e) {
 
 $('.nav').localScroll();
 $('.return').localScroll();
-$('.story').localScroll();
+$('.name').localScroll();
+$('.contact').localScroll();
 
 var $profile = $('.profile');
 
@@ -36,5 +37,9 @@ if(1==arguments.length){if(d.is(a,"object")){for(var f in a)a[t](f)&&this.data(f
 var s = Snap ();
 var $arm = $('right-arm');
 
-element.selectAll($arm);
-matrix.rotate(30,1,1)
+
+snap.animate (0, 10 function (val){
+	arm.attr({
+		x:val
+	});
+},1000);
